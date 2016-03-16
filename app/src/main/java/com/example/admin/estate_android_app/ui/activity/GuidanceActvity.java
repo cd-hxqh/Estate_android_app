@@ -131,9 +131,6 @@ public class GuidanceActvity extends BaseActivity {
 
             }
             currIndex = position;
-            // animation.setFillAfter(true);// True:图片停在动画结束位置
-            // animation.setDuration(300);
-            // mPageImg.startAnimation(animation);
         }
 
         @Override
