@@ -8,4 +8,9 @@
     <dimen name="titlebar_hight">48.0dip</dimen>
     <dimen name="text_size_22">22sp</dimen>
     <dimen name="dimens_10dp">10dp</dimen>
+
+    <dimen name="margin_size_5">5dip</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
 </resources>

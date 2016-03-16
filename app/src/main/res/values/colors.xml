@@ -11,7 +11,9 @@
 
     <color name="transparent">#00000000</color><!--透明-->
     <color name="back">#1f8b94</color>
-
+    <color name="orange">#ffffa500</color> <!--橙色-->
+    <color name="green">#99CC00</color>
+    <color name="grey_colors_1">#666666</color>
 
 
 

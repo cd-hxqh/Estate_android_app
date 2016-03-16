@@ -16,7 +16,26 @@
     <!--二维码扫描-->
     <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
     <string name="title_scan_text">二维码扫描</string>
+    <!--LoadActivity-->
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">登录界面</string>
+    <!--LoginActivity-->
+    <string name="login_please_usename">请输入账号</string>
+    <string name="login_please_password">请输入密码</string>
+    <string name="ck_remember_pwd">记住密码</string>
+    <string name="btn_login">登&#160;&#160;&#160;录</string>
+    <string name="user_username">输入用户名</string>
+    <string name="user_pwd">输入密码</string>
+
+
+    <!--key-->
+    <string name="user_check_key_token">user_check_key_token</string>
+    <string name="guidance_id_key_token">guidance_id_key_token</string>
+    <string name="title_activity_guidance_actvity">GuidanceActvity</string>
+    <string name="user_name_key_token">user_name_key_token</string>
+    <string name="user_pwd_key_token">user_pwd_key_token</string>
+
+    <!--网络信息提示-->
+    <string name="error_title">错误</string>
+
 </resources>
