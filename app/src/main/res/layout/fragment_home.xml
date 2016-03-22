@@ -1,7 +1,123 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.estate_android_app.ui.fragment.HomeFragment">
+    android:background="@color/tab_off_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/task_relativelayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_size_5"
+        android:background="@drawable/list_background"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/task_linearlayout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/text_size_10"
+            android:layout_marginTop="@dimen/margin_size_5">
+
+            <ImageView
+                android:id="@+id/task_image_id"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/icon_w" />
 
 
-</FrameLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/task_linearlayout1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/task_linearlayout_id"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_size_5">
+
+            <TextView
+                android:id="@+id/task_title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_inbox_title_hint"
+
+                android:textSize="@dimen/text_size_16" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line_id"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray_deep_light" />
+
+    <RelativeLayout
+        android:id="@+id/bulletin_relativelayout_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_size_5"
+        android:background="@drawable/list_background"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/bulletin_linearlayout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_size_5"
+            android:layout_marginLeft="@dimen/text_size_10"
+            android:layout_marginTop="@dimen/margin_size_5">
+
+            <ImageView
+                android:id="@+id/bulletin_image_id"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/bulletin_tb" />
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bulletin_linearlayout_id"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_size_5">
+
+            <TextView
+                android:id="@+id/bulletin_title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_bulletin_title_hint"
+
+                android:textSize="@dimen/text_size_16" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:paddingTop="@dimen/margin_size_5">
+
+            <TextView
+                android:id="@+id/bulletin_time_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

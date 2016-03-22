@@ -14,6 +14,18 @@
     <color name="orange">#ffffa500</color> <!--橙色-->
     <color name="green">#99CC00</color>
     <color name="grey_colors_1">#666666</color>
+    <!-- 灰白色 -->
+    <color name="tab_off_white">#eeeeee</color>
+
+    <color name="listpressed">#e9f9f8</color>
+    <color name="bg_gray_deep_light">#ffe0e0e0</color>
+    <color name="gray">#aaa</color>
+    <color name="light_gray2">#E8E8E8</color><!--深灰色-->
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
 
 
 

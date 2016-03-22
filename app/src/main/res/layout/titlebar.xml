@@ -36,6 +36,7 @@
         android:layout_marginRight="@dimen/dimens_10dp"
         android:background="@drawable/title_image_button_bg"
         android:src="@drawable/ic_search_normal"
+        android:visibility="gone"
         />
 
 

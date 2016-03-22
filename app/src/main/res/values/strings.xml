@@ -26,6 +26,12 @@
     <string name="btn_login">登&#160;&#160;&#160;录</string>
     <string name="user_username">输入用户名</string>
     <string name="user_pwd">输入密码</string>
+    <string name="login_loging">登录中...</string>
+
+    <!--登录信息提示-->
+    <string name="login_successful_hint">登陆成功</string>
+
+    <string name="exit_text">再按一次退出程序</string>
 
 
     <!--key-->
@@ -34,8 +40,47 @@
     <string name="title_activity_guidance_actvity">GuidanceActvity</string>
     <string name="user_name_key_token">user_name_key_token</string>
     <string name="user_pwd_key_token">user_pwd_key_token</string>
+    <string name="user_id_key_token">user_id_key_token</string>
+    <string name="persion_id_key_token">persion_id_key_token</string>
+    <string name="user_account_key_token">user_account_key_token</string>
+    <string name="user_sub_site">user_sub_site</string>
 
     <!--网络信息提示-->
     <string name="error_title">错误</string>
+    <string name="error_obtain_once">无法获取ONCE</string>
+    <string name="error_network_exception">网络通信异常，请稍后重试</string>
+    <string name="error_network_disconnect">网络不可达,请开启Wifi或者移动数据网络</string>
+    <string name="error_reply">提交失败</string>
+    <string name="error_create_topic">无法创建新话题</string>
+    <string name="error_login">无法登录</string>
+    <string name="error_fav_nodes">收藏节点错误</string>
+    <string name="error_fav_topic">收藏话题错误</string>
+    <string name="error_get_profile">无法获取用户个人资料</string>
+    <string name="error_unknown">未知错误</string>
+
+    <!-- 公告栏、任务箱tab -->
+    <string name="tab_bulletin_text">公告栏</string>
+    <string name="tab_inbox_text">任务箱</string>
+    <string name="tab_bulletin_text_hint">有来自公告栏的消息</string>
+    <string name="tab_bulletin_title_hint">公告栏消息</string>
+    <string name="not_bulletin_title_hint">暂无新的公告栏信息</string>
+    <string name="tab_inbox_text_hint">有来自任务栏的消息</string>
+    <string name="tab_inbox_title_hint">任务栏消息</string>
+    <string name="not_task_title_hint">暂无新的任务栏信息</string>
+
+    <string name="have_not_data_txt">暂无相关数据</string>
+
+    <string name="synchronous_data_text">同步基础数据</string>
+    <!--公告栏-->
+    <string name="bulletin_text">公告栏</string>
+    <string name="theme_text">主题:</string>
+    <string name="desction_text">描述:</string>
+
+    <!-- hint -->
+    <string name="hint_item_data">暂无数据</string>
+
+    <string name="get_data_info_fail">获取信息失败</string>
+    <string name="num_text">编号:</string>
+
 
 </resources>

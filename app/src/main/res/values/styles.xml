@@ -16,4 +16,12 @@
     </style>
 
     <style name="splash_style" parent="@android:style/Theme.NoTitleBar.Fullscreen"></style>
+
+    <style name="message_hint_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/tab_msgnum_textbg</item>
+        <item name="android:visibility">visible</item>
+    </style>
 </resources>
