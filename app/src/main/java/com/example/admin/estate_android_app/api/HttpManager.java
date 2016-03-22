@@ -84,7 +84,6 @@ public class HttpManager {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, String responseString) {
-                Log.i(TAG, "statusCode" + "responseString=" + responseString);
                 Results result = JsonUtils.parsingResults(cxt, responseString);
 
                 SafeHandler.onSuccess(handler, result, currentpage, 10);
