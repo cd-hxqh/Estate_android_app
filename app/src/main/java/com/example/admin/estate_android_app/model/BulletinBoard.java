@@ -7,6 +7,7 @@ import com.instagram.common.json.annotation.JsonType;
  * Created by think on 2015/12/25.
  * 公告栏
  *
+ *
  */
 @JsonType
 public class BulletinBoard extends Entity {
