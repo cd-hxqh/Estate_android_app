@@ -139,12 +139,14 @@ public class BulletinActivity extends BaseActivity implements SwipeRefreshLayout
 
     @Override
     public void onLoad() {
-
+        page++;
+        getData(searchText);
     }
 
     @Override
     public void onRefresh() {
-
+        page = 1;
+        getData(searchText);
     }
 
 

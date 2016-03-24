@@ -13,6 +13,7 @@
         android:layout_marginLeft="8.0dip"
         android:background="@drawable/title_image_button_bg"
         android:scaleType="center"
+        android:visibility="gone"
         android:src="@drawable/icon_back"
          />
 
@@ -39,5 +40,18 @@
         android:visibility="gone"
         />
 
+    <Button
+        android:id="@+id/right_image_btn_1"
+        android:layout_width="50.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.0dip"
+        android:background="@drawable/btn_shape"
+        android:scaleType="center"
+        android:text="提交"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
 
 </RelativeLayout>

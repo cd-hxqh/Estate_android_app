@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -28,6 +29,8 @@ public class HomeFragment extends BaseFragment {
 
     /** 标题 **/
     private TextView titleText;
+    /**返回按钮**/
+    private ImageView backImageView;
 
     /**任务栏**/
     private RelativeLayout messageRelativeLayout;
@@ -48,6 +51,7 @@ public class HomeFragment extends BaseFragment {
     /**界面组件**/
     private void findViewById() {
         titleText = (TextView) view.findViewById(R.id.title_text);
+        backImageView=(ImageView)view.findViewById(R.id.left_image_btn);
 
         messageRelativeLayout=(RelativeLayout)view.findViewById(R.id.task_relativelayout_id);
         bulletinRelativeLayout=(RelativeLayout)view.findViewById(R.id.bulletin_relativelayout_id);
@@ -57,6 +61,7 @@ public class HomeFragment extends BaseFragment {
     /** 初始化界面组件 **/
     private void initView() {
         titleText.setText(getResources().getString(R.string.tab_home));
+        backImageView.setVisibility(View.GONE);
         messageRelativeLayout.setOnClickListener( messageOnClickListener);
         bulletinRelativeLayout.setOnClickListener(bulletinOnClickListener);
     }

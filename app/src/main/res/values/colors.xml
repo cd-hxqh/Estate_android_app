@@ -5,6 +5,7 @@
     <color name="color0">#37c4bc</color><!--天蓝色-->
     <color name="white_color">#ffffffff</color><!--白色-->
     <color name="black_color">#000000</color><!--黑色-->
+    <color name="light_black">#393d3f</color><!--浅黑色 -->
 
 
     <drawable name="bottom_bg">#ff2db0bb</drawable>

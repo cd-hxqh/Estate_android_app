@@ -146,4 +146,15 @@ public class SystemSharedPreferences {
                 context.getString(R.string.user_sub_site), "");
     }
 
+
+    /**
+     * 获取用户账户
+     */
+
+    public static String getUserName(Context context) {
+        SharedPreferences defaultSharedPreferences = PreferenceManager
+                .getDefaultSharedPreferences(context);
+        return defaultSharedPreferences.getString(
+                context.getString(R.string.user_account_key_token), "");
+    }
 }

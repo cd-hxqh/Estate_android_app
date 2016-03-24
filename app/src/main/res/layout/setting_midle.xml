@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_qzone_mail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/text_size_10"
+    android:background="@drawable/shape_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/syncinfo_id"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/list_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/bulletin"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="同步数据"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/network_id"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/list_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/bulletin"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/tab_setting_net_work"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <com.example.admin.estate_android_app.unit.SwitchButton
+            android:id="@+id/switchButton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/clear_id"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/list_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/bulletin"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/tab_setting_clean_cache"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/cache_size_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="6.15M"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/new_id"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/list_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/bulletin"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/tab_setting_check_update"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/products_id"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/list_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:src="@drawable/bulletin"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/tab_setting_products"
+            android:textColor="#ff545454"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/line" />
+
+</LinearLayout>

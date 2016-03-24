@@ -11,11 +11,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.admin.estate_android_app.R;
+import com.example.admin.estate_android_app.application.AppManager;
 import com.example.admin.estate_android_app.ui.fragment.BusinessFragment;
 import com.example.admin.estate_android_app.ui.fragment.HomeFragment;
 import com.example.admin.estate_android_app.ui.fragment.ScaningFragment;
 import com.example.admin.estate_android_app.ui.fragment.SearchFragment;
 import com.example.admin.estate_android_app.ui.fragment.SettingFragment;
+import com.flyco.animation.BaseAnimatorSet;
+import com.flyco.animation.BounceEnter.BounceTopEnter;
+import com.flyco.animation.SlideExit.SlideBottomExit;
+import com.flyco.dialog.listener.OnBtnClickL;
+import com.flyco.dialog.widget.NormalDialog;
 
 /**
  * MainActivity
@@ -59,6 +65,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private Fragment fragment;
 
 
+    private BaseAnimatorSet mBasIn;
+    private BaseAnimatorSet mBasOut;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +100,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void initView() {
+
+        mBasIn = new BounceTopEnter();
+        mBasOut = new SlideBottomExit();
         infoLayout.setOnClickListener(this);
         businessLayout.setOnClickListener(this);
         scanningImage.setOnClickListener(this);
@@ -263,4 +276,42 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
+
+
+    /**
+     * 退出程序
+     */
+    public void showAlertDialog() {
+        final NormalDialog dialog = new NormalDialog(MainActivity.this);
+        dialog.content("确定退出程序吗")//
+                .showAnim(mBasIn)//
+                .dismissAnim(mBasOut)//
+                .show();
+
+        dialog.setOnBtnClickL(
+                new OnBtnClickL() {
+
+
+                    @Override
+                    public void onBtnClick() {
+                        dialog.dismiss();
+                    }
+                },
+                new OnBtnClickL() {
+                    @Override
+                    public void onBtnClick() {
+                        AppManager.AppExit(MainActivity.this);
+                        dialog.dismiss();
+                    }
+                });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        showAlertDialog();
+    }
+
+
 }

@@ -17,4 +17,9 @@
 
     <dimen name="text_size_16">16dip</dimen>
     <dimen name="dimens_5_dip">5dip</dimen>
+    <dimen name="text_size_100">100.0dip</dimen>
+    <dimen name="dimens_10">10dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimens_16dp">16dp</dimen>
 </resources>

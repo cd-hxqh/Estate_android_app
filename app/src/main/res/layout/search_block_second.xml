@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/text_size_10" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_size_20"
+        android:paddingRight="@dimen/text_size_20"
+        >
+
+        <TextView
+            android:id="@+id/udproject_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/ic_repair_order"
+            android:gravity="center"
+            android:text="@string/udproject_title" />
+
+        <TextView
+            android:id="@+id/udcheckbill_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_safe_order"
+            android:gravity="center"
+            android:text="@string/udcheckbill_title" />
+
+        <TextView
+            android:id="@+id/asset_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/ic_asset"
+            android:gravity="center"
+            android:text="@string/asset_title_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_size_20"
+        android:paddingRight="@dimen/text_size_20" 
+        android:layout_marginTop="@dimen/text_size_10">
+
+        <TextView
+            android:id="@+id/locations_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/icon_map"
+            android:gravity="center"
+            android:text="@string/locations_title_text" />
+
+        <TextView
+            android:id="@+id/uddrillrecord_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_plan_order"
+            android:gravity="center"
+            android:text="@string/uddrillrecord_title_text" />
+
+        <TextView
+            android:id="@+id/cont_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/ic_cont"
+            android:gravity="center"
+            android:text="@string/purchview_title_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_size_20"
+        android:paddingRight="@dimen/text_size_20"
+        android:layout_marginTop="@dimen/text_size_10" >
+
+        <TextView
+            android:id="@+id/penson_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/ic_penson"
+            android:gravity="center"
+            android:text="@string/person_title_text" />
+
+        <TextView
+            android:id="@+id/work_type_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_work_type"
+            android:gravity="center"
+            android:text="@string/craft_title_text" />
+    </RelativeLayout>
+
+</LinearLayout>

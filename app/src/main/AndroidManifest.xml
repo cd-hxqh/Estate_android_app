@@ -65,10 +65,28 @@
             android:label="@string/title_activity_login"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"></activity>
-        <!--登录界面-->
+        <!--公告栏界面-->
         <activity
             android:name=".ui.activity.BulletinActivity"
-            android:label="公告栏"
+            android:label="@string/bulletin_text"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!--公告栏详情界面-->
+        <activity
+            android:name=".ui.activity.BulletinDetailsActivity"
+            android:label="@string/bulletin_text"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!--库存使用界面-->
+        <activity
+            android:name=".ui.activity.InvuseActivity"
+            android:label="@string/title_invuse_text"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!--工具管理界面-->
+        <activity
+            android:name=".ui.activity.ToolitemActivity"
+            android:label="@string/toolitem_title"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"></activity>
     </application>

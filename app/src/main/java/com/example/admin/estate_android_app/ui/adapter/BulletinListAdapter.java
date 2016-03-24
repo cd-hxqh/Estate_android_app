@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.admin.estate_android_app.R;
 import com.example.admin.estate_android_app.model.BulletinBoard;
+import com.example.admin.estate_android_app.ui.activity.BulletinDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +50,11 @@ public class BulletinListAdapter extends RecyclerView.Adapter<BulletinListAdapte
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(mContext, BulletinDetailsActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("bulletinBoard", bulletinBoard);
+                intent.putExtras(bundle);
+                mContext.startActivity(intent);
             }
         });
     }

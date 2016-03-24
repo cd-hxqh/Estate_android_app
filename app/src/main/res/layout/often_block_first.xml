@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/text_size_10" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_size_20"
+        android:paddingRight="@dimen/text_size_20"
+        >
+
+        <TextView
+            android:id="@+id/readmeter_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/yxcbicon"
+            android:gravity="center"
+            android:text="@string/synchrodata_readmeter_title" />
+
+        <TextView
+            android:id="@+id/inventory_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/icon_inventory"
+            android:gravity="center"
+            android:text="@string/synchrodata_inventory_title" />
+
+        <TextView
+            android:id="@+id/stock_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/icon_stock"
+            android:gravity="center"
+            android:text="使用情况" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_size_20"
+        android:paddingRight="@dimen/text_size_20" 
+        android:layout_marginTop="@dimen/text_size_10">
+
+        <TextView
+            android:id="@+id/toolitem_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/icon_gjly"
+            android:gravity="center"
+            android:text="@string/toolitem_title" />
+
+        <TextView
+            android:id="@+id/purchase_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_purchase"
+            android:gravity="center"
+            android:text="@string/purchase_manage_title" />
+
+        <TextView
+            android:id="@+id/check_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/ic_check"
+            android:gravity="center"
+            android:text="@string/check_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_size_20"
+        android:paddingRight="@dimen/text_size_20"
+        android:layout_marginTop="@dimen/text_size_10" >
+
+        <TextView
+            android:id="@+id/udondutylog_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/watch_record"
+            android:gravity="center"
+            android:text="@string/udondutylog_title_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>

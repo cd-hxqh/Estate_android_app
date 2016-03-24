@@ -91,4 +91,38 @@ public class HttpManager {
         });
     }
 
+
+
+    /**
+     * 解析返回的结果--分页*
+     */
+    public static void getDataPagingInfo1(final Context cxt,String tableName,
+                                          String fields, String param, String haspage, final int currentpage,
+                                          String pagesize, String useruid, String orderby, String sorttype, final HttpRequestHandler<Results> handler) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        RequestParams params = new RequestParams();
+        params.put("tableName", tableName);
+        params.put("fields", fields);
+        params.put("params", param);
+        params.put("haspage", haspage);
+        params.put("currentpage", currentpage+"");
+        params.put("pagesize", pagesize);
+        params.put("useruid", useruid);
+        params.put("orderby", orderby);
+        params.put("sorttype", sorttype);
+        client.post(Constant.RECORD_LIST, params, new TextHttpResponseHandler() {
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                SafeHandler.onFailure(handler, cxt.getString(R.string.get_data_info_fail));
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, String responseString) {
+                Results result = JsonUtils.parsingResults(cxt, responseString);
+
+                SafeHandler.onSuccess(handler, result, currentpage, 10);
+            }
+        });
+    }
+
 }

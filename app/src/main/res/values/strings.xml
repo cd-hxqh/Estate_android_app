@@ -76,11 +76,212 @@
     <string name="theme_text">主题:</string>
     <string name="desction_text">描述:</string>
 
+
+    <!-- 公告栏详情 -->
+    <string name="bulletin_detail_title">公告栏详情</string>
+    <string name="bulletin_detail_theme">主题:</string>
+    <string name="bulletin_detail_message">消息:</string>
+    <string name="bulletin_detail_principal">负责人:</string>
+    <string name="bulletin_detail_start_date">发布日期:</string>
+    <string name="bulletin_detail_end_date">截止日期:</string>
+
     <!-- hint -->
     <string name="hint_item_data">暂无数据</string>
+    <!--暂无信息提示-->
+    <string name="have_not_data">暂无信息</string>
 
     <string name="get_data_info_fail">获取信息失败</string>
     <string name="num_text">编号:</string>
+    <string name="wonum_text">工单:</string>
+    <string name="work_title">工单管理</string>
+
+    <!--运行抄表-->
+    <string name="synchrodata_readmeter_title">运行抄表</string>
+    <!--库存管理-->
+
+    <string name="synchrodata_inventory_title">库存管理</string>
+    <!--采购管理-->
+    <string name="purchase_manage_title">采购管理</string>
+
+    <!-- 承接查验 -->
+    <string name="check_title">承接查验</string>
+    <string name="check_record_title">承接查验记录</string>
+    <string name="check_site_title">承接查验地点</string>
+    <string name="workorder_title">地点查验记录</string>
+    <string name="check_site_detail_title">查验地点详情</string>
+    <string name="check_record_detail_title">查验记录详情</string>
+    <string name="check_site_add_title">新建查验地点</string>
+    <string name="check_site_hierarchypath">分类</string>
+    <string name="udchecklocations_title">查验位置</string>
+    <string name="add_udchecklocations_title">新建查验位置</string>
+    <string name="udcheckasset_title">查验资产</string>
+
+    <!-- 运行交接班 -->
+    <string name="udondutylog_title_text">值班记录</string>
+    <string name="udondutylog_detail_title_text">记录详情</string>
+    <string name="udondutylog_add_title_text">新建值班记录</string>
+    <string name="udondutylog_dtnum_text">值班编号</string>
+    <string name="udondutylog_desc_text">值班描述</string>
+    <string name="udondutylog_manageposition_text">管理位置</string>
+    <string name="udondutylog_detail_text">详情</string>
+    <string name="udondutylog_transferperson_text">交班人</string>
+    <string name="udondutylog_successor_text">接班人</string>
+    <string name="udondutylog_persongroup_text">值班人员</string>
+    <string name="udondutylog_transfertime_text">交班时间</string>
+    <string name="udondutylog_record_text">交班记录</string>
+    <string name="udondutylog_detail_1_text">记录信息</string>
+    <string name="udondutylog_bigstory_text">本值大事记</string>
+    <string name="udondutypersonrecord_title_text">来客登记</string>
+    <string name="udondutyoperaterecord_title_text">操作任务</string>
+    <string name="udondutyoperaterecord_add_title_text">新建操作任务</string>
+    <string name="udondutyoperaterecord_detail_title_text">操作任务详细</string>
+    <string name="uddtnextpersong_title_text">下一交班人</string>
+    <string name="uddtnextpersong_persion_text">交班人员</string>
+    <string name="sure_successor_text">确认接班</string>
 
 
+    <!-- 大中修项目 -->
+    <string name="udproject_title">大中修项目</string>
+    <string name="udproject_detail_title">大中修项目详情</string>
+    <string name="udproject_budget_text">执行预算</string>
+    <string name="udproject_orgid_text">组织</string>
+    <string name="udproject_site_text">地点</string>
+    <string name="udproject_enterby_text">录入人</string>
+    <string name="udproject_enterdate_text">录入时间</string>
+    <string name="udproject_route_text">检修线路</string>
+    <string name="udproject_planenddate_text">计划结束时间</string>
+    <string name="udproject_problem_text">存在问题</string>
+    <string name="udproject_reason_text">原因</string>
+
+
+    <!-- 安全检查单 -->
+    <string name="udcheckbill_title">安全检查单</string>
+    <string name="udcheckbill_detail_title">安全检查单详情</string>
+    <string name="udcheckbill_udcheckbillnum_text">检查单</string>
+    <string name="udcheckbill_billlevel_text">级别</string>
+    <string name="udcheckbill_creater_text">创建人</string>
+    <string name="udcheckbill_createdate_text">创建时间</string>
+    <string name="udcheckbill_leader_text">受检单位负责人</string>
+    <string name="udcheckbill_checkcompany_text">受检单位</string>
+    <string name="udcheckbill_checker_text">检查单位负责人</string>
+    <string name="udcheckbill_checkvendor_text">检查单位</string>
+    <string name="udcheckbill_safeplannum_text">安全检查计划</string>
+    <string name="udcheckbill_checktime_text">检查时间</string>
+
+    <!-- 资产查询 -->
+    <string name="asset_title_text">资产查询</string>
+    <string name="asset_detail_text">资产详情</string>
+    <string name="asset_description_class_text">类描述</string>
+    <string name="asset_templateid_text">资产模板</string>
+    <string name="asset_parent_text">父级</string>
+    <string name="asset_locations_description_text">位置描述</string>
+    <string name="asset_binnum_text">货柜</string>
+    <string name="asset_itemnum_text">周转项目</string>
+    <string name="asset_detail_address_text">详细地址</string>
+    <string name="asset_saddresscode_text">服务地址</string>
+    <string name="asset_formattedaddress_text">格式化地址</string>
+    <string name="asset_poinfo_text">采购信息</string>
+    <string name="asset_vendor_text">供应商</string>
+    <string name="asset_manufacturer_text">制造商</string>
+    <string name="asset_installdate_text">安装日期</string>
+    <string name="asset_purchaseprice_text">采购价格</string>
+    <string name="asset_replacecost_text">更换成本</string>
+
+
+    <!-- 位置查询 -->
+    <string name="locations_title_text">位置查询</string>
+    <string name="locations_detail_text">位置详情</string>
+    <string name="locations_itemnum_text">周转项目</string>
+    <string name="locations_calnum_text">日历</string>
+    <string name="locations_shiftnum_text">班次</string>
+    <string name="locations_failurecode_text">故障类</string>
+    <string name="locations_glaccount_text">GL科目</string>
+
+    <!-- 预案演练单 -->
+    <string name="uddrillrecord_title_text">预案演练单</string>
+    <string name="uddrillrecord_detail_title_text">演练单详情</string>
+    <string name="uddrillrecord_detail_num_text">记录</string>
+    <string name="uddrillrecord_detail_uddrillplannum_text">演练计划</string>
+    <string name="uddrillrecord_detail_schemer_text">计划人</string>
+    <string name="uddrillrecord_detail_driller_text">参与人员</string>
+    <string name="uddrillrecord_detail_drillloc_text">演练地点</string>
+    <string name="uddrillrecord_detail_info_text">演练信息</string>
+    <string name="uddrillrecord_detail_plannedendtime_text">计划结束时间</string>
+    <string name="uddrillrecord_detail_begintime_text">演练开始时间</string>
+    <string name="uddrillrecord_detail_endtime_text">演练结束时间</string>
+    <string name="uddrillrecord_detail_result_text">演练结果</string>
+
+    <!-- 合同 -->
+    <string name="purchview_title_text">合同查询</string>
+    <string name="purchview_contractnum_text">合同</string>
+    <string name="purchview_revisionnum_text">修订</string>
+    <string name="purchview_revcomments_text">修订注释</string>
+    <string name="purchview_masternum_text">主合同</string>
+    <string name="purchview_vendorrefnum_text">供应商参考号</string>
+    <string name="purchview_purchaseagent_text">买方</string>
+    <string name="purchview_date_title_text">日期</string>
+    <string name="purchview_renewaldate_text">续签日期</string>
+    <string name="action_pandian">批量盘点该仓库</string>
+    <string name="action_tiaozheng">调整该仓库余量</string>
+
+    <!-- 人员查询 -->
+    <string name="person_title_text">人员查询</string>
+    <string name="person_detail_text">人员详情</string>
+    <string name="person_detail_personid_text">人员</string>
+    <string name="person_detail_displayname_text">名称</string>
+    <string name="person_detail_primaryphone_text">电话号码</string>
+    <string name="person_detail_primaryemail_text">电子邮件</string>
+    <string name="person_detail_addressline1_text">地址</string>
+    <string name="person_detail_city_text">城市</string>
+    <string name="person_detail_postalcode_text">邮政编码</string>
+
+    <!-- 工种查询 -->
+    <string name="craft_title_text">工种查询</string>
+
+    <!-- 用户信息** -->
+    <string name="title_user_detail_text">用户信息</string>
+    <string name="title_user_name_text">用户</string>
+    <string name="title_user_name1_text">用户名</string>
+    <string name="title_user_nickname_text">用户昵称:</string>
+    <string name="user_login_title_text">登陆信息</string>
+    <string name="user_department_detail_text">所属部门:</string>
+    <string name="user_mobilenum_detail_text">电话号码:</string>
+    <string name="user_lastevaldate_detail_text">最新评估日期:</string>
+    <string name="user_nextevaldate_detail_text">下次评估日期:</string>
+    <string name="user_person_title_text">人员信息</string>
+    <string name="person_displayname_text">显示名称</string>
+
+    <!-- 设置 -->
+    <string name="tab_setting_about_wo">关于我们</string>
+    <string name="tab_setting_edit">退出</string>
+    <string name="tab_setting_net_work">WIFI设置</string>
+    <string name="tab_setting_clean_cache">清除缓存</string>
+    <string name="tab_setting_check_update">检查更新</string>
+    <string name="tab_setting_products">产品介绍</string>
+
+
+    <!-- 库存使用情况 -->
+    <string name="title_invuse_text">库存使用</string>
+    <string name="title_invuse_detail_text">使用详情</string>
+    <string name="title_invuse_add_text">新建库存使用</string>
+    <string name="invuse_conversion_text">系数</string>
+    <string name="invuse_add_line">新建行</string>
+
+    <!-- 工具管理 -->
+    <string name="toolitem_title">工具管理</string>
+    <string name="toolitem_list_title">工具列表</string>
+    <string name="add_toolitem_title">新建工具</string>
+    <string name="toolitem_detatil_title">工具详情</string>
+    <string name="toolitem_itemnum_text">工具编号</string>
+    <string name="toolitem_description_text">工具描述</string>
+    <string name="toolitem_commoditygroup_text">商品组</string>
+    <string name="toolitem_commodity_text">商品代码</string>
+    <string name="toolitem_groupname_text">计量表组</string>
+    <string name="toolitem_metername_text">计量表</string>
+    <string name="toolitem_itemsetid_text">项目集</string>
+    <string name="toolitem_status_text">状态</string>
+    <string name="toolitem_lottype_text">批次类型</string>
+    <string name="toolitem_issueunit_text">发放单位</string>
+    <string name="toolitem_msdsnum_text">MSDS</string>
+    <string name="toolitem_receipttolerance_text">接收容差百分比</string>
 </resources>

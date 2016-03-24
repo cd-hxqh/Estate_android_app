@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tab_off_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/userinfo_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_10"
+                    android:background="@drawable/list_background"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="50.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/title_user_detail_text"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/user_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <ImageView
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/into_icon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <include layout="@layout/setting_midle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <include layout="@layout/setting_bottom" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
